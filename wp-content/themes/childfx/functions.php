@@ -1,31 +1,27 @@
 <?php
 /**
- * childfx
  *
- * childfx Theme
+ * ChildFX
  *
- * @package		  childfx
- * @author		  Your Name
- * @link		  http://yourlink.com
- * @since		  Version 1.0.0
+ * ChildFX Theme by CalibreFX Team
+ *
+ * @package		childfx
+ * @author		CalibreFX Team
+ * @copyright   Copyright (c) 2014
+ * @link		http://www.calibrefx.com
+ * @since		Version 2.0
  * @filesource 
  *
  */
 
-/**
- * Include CalibreFx init file, this is our engine
- */
-require_once(TEMPLATEPATH . '/system/Bootloader.php');
-global $calibrefx;
-
-define('CHILD_THEME_NAME', 'childfx');
-define('CHILD_THEME_URL', 'http://www.calibreworks.com');
-define('CHILD_THEME_VERSION', '1.0.0');
+define('CHILD_THEME_NAME', 'ChildFX Theme');
+define('CHILD_THEME_URL', 'http://www.calibrefx.com/');
+define('CHILD_THEME_VERSION', '2.0');
 define('CHILD_THEME_DB_VERSION', '1');
+define('CHILD_APP_DIR', 'app');
 
-//We start our engine
-$calibrefx->load->add_child_path(CHILD_URI . '/app');
+// Theme Supports
+//add_theme_support('calibrefx-header-right-widgets');
 
-//Load the autoload
-$calibrefx->load->do_autoload(CHILD_URI . '/app/config/autoload.php');
-
+// Image Sizes
+//add_image_size( 'headline', 480, 300, true );
