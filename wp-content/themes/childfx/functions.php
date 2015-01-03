@@ -25,3 +25,5 @@ define('CHILD_APP_DIR', 'app');
 
 // Image Sizes
 //add_image_size( 'headline', 480, 300, true );
+
+// add_theme_support('calibrefx-wraps', array('header', 'subnav', 'inner', 'footer', 'footer-widget'));
